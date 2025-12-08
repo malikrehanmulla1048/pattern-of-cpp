@@ -8,7 +8,7 @@ int binarytodecimal(int n)
     while(n>=0)
     {
         int reminder=n%10;
-        ans+=(reminder*power);
+        ans+=reminder*power;
         power*=2;
         n=n/10;
     }
@@ -17,8 +17,7 @@ int binarytodecimal(int n)
 int main()
 {
     cout<<"Binary to Decimal Conversion:"<<"\n";
-    int i=binarytodecimal(1);
-    cout<< i <<"\n";
+    cout<< binarytodecimal(1) <<"\n";
     cout<<"binarytodecima"<<"\n";
     return 0;
 }
