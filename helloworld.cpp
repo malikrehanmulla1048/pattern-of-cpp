@@ -8,7 +8,7 @@ int binarytodecimal(int n)
     while(n>=0)
     {
         int reminder=n%10;
-        ans+=(reminder*power);
+        ans+=(reminder*power) ;
         power*=2;
         n=n/10;
     }
