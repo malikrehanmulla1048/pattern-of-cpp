@@ -35,15 +35,15 @@ vector<int> insertionSort(vector<int> &arr)
     for (int i = 1; i < arr.size(); i++)
     {
         int  j = i - 1;
-        while(arr[j] > arr[i])
+        int ch = arr[i];
+        while(arr[j] > ch)
         {
-            int ch = arr[i];
-            arr[i] = arr[j];
-            if(j > 0)
-            {
-                j--;
-            }
+            arr[j+1] = arr[j];
+            arr[j] = ch;
+            if(j>0) j--;
+            
         }
+        
     }
     return arr;
 }
@@ -65,13 +65,15 @@ int main()
         cout<<sorted_array[i]<< " ";
     }
     cout<<endl;
-    vector<int> sortedArray2 = selectionSort(arr);
+    vector<int> arr3 = {5, 3 , 2 , 1 , 4 };
+    vector<int> sortedArray2 = selectionSort(arr3);
     for(int i=0 ; i< sortedArray2.size() ; i++)
     {
         cout<<sortedArray2[i]<< " ";
     }
     cout<<endl;
-    vector<int> insertedArray = insertionSort(arr);
+    vector<int> arr2 = {5, 3 , 2 , 1 , 4 };
+    vector<int> insertedArray = insertionSort(arr2);
     for(int i=0 ; i<  insertedArray.size() ; i++)
     {
         cout<<insertedArray[i]<< " ";
