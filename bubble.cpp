@@ -2,7 +2,7 @@
 #include<vector>
 using namespace std;
 vector<int> sortArray(vector<int> &arr)
-{
+{//bubble sort
     for(int i=0 ; i< arr.size()-1 ; i++)
     {
         for(int j=0 ; j< arr.size()-i-1 ; j++)
