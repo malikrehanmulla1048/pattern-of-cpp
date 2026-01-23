@@ -5,6 +5,7 @@ using namespace std;
 vector<int> findMissingAndRepeatedValues(vector<vector<int>>& grid) {
     vector<int> ans;
     unordered_map<int, int> m;
+    int count= 0;
     int n = grid.size();
     for(int i =0;i<n;i++)
     {
@@ -18,6 +19,7 @@ vector<int> findMissingAndRepeatedValues(vector<vector<int>>& grid) {
             m[grid[i][j]]=1;
         }
     }
+    //also this can be solved by the n(n+1)/2 formula
     for(int i=1;i<=n*n;i++)
     {
         if(m.find(i)== m.end())
@@ -26,6 +28,8 @@ vector<int> findMissingAndRepeatedValues(vector<vector<int>>& grid) {
             break;
         }
     }
+
+
     return ans;
 }
 int main()
