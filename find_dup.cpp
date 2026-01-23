@@ -17,3 +17,10 @@ using namespace std;
         }
         return slow;
     }
+    int main()
+    {
+        vector<int> nums = {1,3,4,2,2};
+        int ans = findDuplicate( nums);
+        cout<< ans << endl; 
+        return 0;
+    }
