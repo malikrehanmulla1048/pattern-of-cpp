@@ -1,10 +1,4 @@
----
 
-### `PROGRESS.md`
-
-Create a separate file named `PROGRESS.md` in your repository root to track your milestones, learning stages, and upcoming goals:
-
-```markdown
 # 📈 Learning & Development Progress
 
 This file tracks my milestones and roadmap as I master C++, Data Structures, Algorithms, and Problem Solving.
